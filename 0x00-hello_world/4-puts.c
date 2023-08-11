@@ -1,7 +1,8 @@
 #include<stdio.h>
 /**
-  * main function  is to display words and takes void argument 
-  * return is an integer 0 meaning success
+  * main - Entry point
+  *
+  *Return Always 0 (Success)
   */
 int main(void)
 {
