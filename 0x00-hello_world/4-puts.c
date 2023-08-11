@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
-  * main function  is to print hello
+  * main function  is to display words and takes void argument 
   * return is an integer 0 meaning success
   */
 int main(void)

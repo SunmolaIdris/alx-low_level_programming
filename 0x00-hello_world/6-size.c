@@ -1,5 +1,6 @@
 /*
-   * Main function receives void and returns integer 0 for success
+   * main- Entry point function receives void and 
+   * return- always return integer 0 for success
    */
 #include<stdio.h>
 int main(void)
