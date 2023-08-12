@@ -5,7 +5,7 @@
  * main - Is the main function declaration with no argument and returns 0
  *
  * Return - Always return an integer type whose value is 0 for (Success)
- */
+*/
 int main(void)
 {
 	char letter;
