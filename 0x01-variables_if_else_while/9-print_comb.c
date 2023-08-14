@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - A program that prints combination of all one digit numbers separated by comma and space.
+ * main - A program that prints combination of all one digit numbers.
  *
- * Return: Always return 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
