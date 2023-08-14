@@ -1,22 +1,20 @@
 #include <stdio.h>
-#include <ctype.h>
+#include <stdlib.h>
+#include <time.h>
 /**
-*main - Program to print alphabets a-z 
-*
-*Return: return 0 for (success)
-*/
+ * main - Prints the alphabets in lowercase.
+ *
+ * Return: Always return 0 i.e (Success)
+ */
 int main(void)
 {
 	char letter;
-	letter = 'a';
-	while (letter <= 'z')
+
+	for (letter = 'a'; letter <= 'z'; ++letter)
 	{
 		putchar(letter);
-
-		letter++;
 	}
 	putchar('\n');
 
 	return (0);
 }
-
