@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - A program that prints  numbers 1 to 9 separated by comma and space.
+ * main - A program that prints combination of all one digit numbers separated by comma and space.
  *
- * Return: Always 0 (Success)
+ * Return: Always return 0 (Success)
  */
 int main(void)
 {
@@ -13,10 +13,14 @@ int main(void)
 	for (num = 0; num <= 9; num++)
 	{
 		putchar(num + '0');
-		putchar(',');
-		putchar(' ');
+		if (num != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 
-	putchar('\n');
-	return (0);
+putchar('\n');
+
+return (0);
 }
