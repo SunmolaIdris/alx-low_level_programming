@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
 *main - main function of my program with printf function
 *Return - returns integer 0 always
