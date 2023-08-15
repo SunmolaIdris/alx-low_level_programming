@@ -15,9 +15,9 @@ int main()
 
 	for (number = 0; number < 1000; number++)
 	{
-		hundreds = number / 100;
+		hundred = number / 100;
 		tens = (number / 10) % 10;
-		ones = number % 10;
+		unit = number % 10;
 
 		if (hundred < tens && tens < unit)
 		{
