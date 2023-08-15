@@ -1,34 +1,32 @@
-#include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 /**
-* main - Is the main function declaration with no argument and returns 0
-*
-*
-* Return - Always return an integer type whose value is 0 for (Success)
-*/
+ * main - n is greater positive, negative or zero
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
-	int lastDigit;
+	int lastD;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastDigit = n % 10;
 
-	lastDigit = n % 10;
+	lastD = n % 10;
 
-	if (lastDigit > 5)
+	if (lastD > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, lastDigit);
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastD);
 	}
-	else if (lastDigit < 6 && lastDigit != 0)
+	else if (lastD < 6 && lastD != 0)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigit);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastD);
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is 0\n", n, lastDigit);
+		printf("Last digit of %d is %d and is 0\n", n, lastD);
 	}
 
 	return (0);
