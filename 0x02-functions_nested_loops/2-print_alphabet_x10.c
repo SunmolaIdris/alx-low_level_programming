@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * main -  This is my main function
+ * print_alphabet_x10 -  This is the name of my function
  * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	char x;
 	int i;
@@ -13,11 +13,9 @@ int main(void)
 
 	while (i < 10)
 	{
-		x = 'a';
-		while (x <= 'z')
+		for (x = 'a'; x <= 'z'; x++)
 		{
 			_putchar(x);
-			x++;
 		}
 		_putchar('\n');
 		i++;
