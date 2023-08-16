@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
-* main - is the main function.
-* Prints "_putchar" followed by a new line.
-* return - 0 on return argument indicate successful execution
-*/
+ * main -  This is my main function
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	_putchar('_');
@@ -16,5 +15,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
