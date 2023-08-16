@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* main - is the main function for task 0.
+* main - is the main function.
 * Prints "_putchar" followed by a new line.
-* return - Returns 0 to indicate successful execution
+* return - 0 on return argument indicate successful execution
 */
 int main(void)
 {
