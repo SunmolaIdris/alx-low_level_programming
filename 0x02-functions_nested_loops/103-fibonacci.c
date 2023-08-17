@@ -9,22 +9,22 @@
 
 int main(void)
 {
-	long int f1, f2, f3, sum;
+	long int fib1, fib2, fib3, sum;
 
-	f1 = 0;
-	f2 = 0;
-	f3 = 1;
+	fib1 = 0;
+	fib2 = 0;
+	fib3 = 1;
 	sum = 0;
 
-	while (f2 < 4000000)
+	while (fib2 < 4000000)
 	{
-		f2 = f1 + f3;
-		f1 = f3;
-		f3 = f2;
+		fib2 = fib1 + fib3;
+		fib1 = fib3;
+		fib3 = fib2;
 
 		if (fib2 % 2 == 0)
 		{
-			sum += f2;
+			sum += fib2;
 		}
 
 	}
