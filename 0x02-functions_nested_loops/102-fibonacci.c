@@ -6,21 +6,21 @@
 
 int main(void)
 {
-	long int f1  = 0;
-	long int f2  = 1;
-	long int f3;
+	long int fib1  = 0;
+	long int fib2  = 1;
+	long int fib3;
 	long int count = 1;
 
 	while (count <= 50)
 	{
-		f3 =  f2 + f1;
+		fib3 =  fib2 + fib1;
 		count++;
-		printf("%ld", f3);
+		printf("%ld", fib3);
 
 		if (count <= 50)
 			printf(", ");
-		f1 = f2;
-		f2 = f3;
+		fib1 = fib2;
+		fib2 = fib3;
 	}
 	printf("\n");
 
