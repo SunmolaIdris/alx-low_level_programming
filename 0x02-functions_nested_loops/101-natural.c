@@ -3,8 +3,8 @@
 /**
  * main - Program to sum integers
  *
- * Sums the natural numbers that are 
- * evenly divisible by 3 and 5 up to 1023 
+ * Sums the natural numbers that are
+ * evenly divisible by 3 and 5 up to 1023
  * Return: 0
  */
 
