@@ -9,36 +9,25 @@
 
 int main(void)
 {
-	unsigned long int a, b, c, b1, b2, c1, c2;
+	int i;
+	unsigned long int j, k, next, sum;
 
-	b = 1;
-	c = 2;
+	j = 1;
+	k = 2;
+	sum = 0;
 
-	printf("%lu", b);
-
-	for (a = 1; a < 91; a++)
+	for (i = 1; i <= 33; ++i)
 	{
-		printf(", %lu", c);
-		c = c + b;
-		b = c - b;
+		if (j < 4000000 && (j % 2) == 0)
+		{
+			sum = sum + j;
+		}
+		next = j + k;
+		j = k;
+		k = next;
 	}
 
-	b1 = b / 1000000000;
-	b2 = b % 1000000000;
-	c1 = c / 1000000000;
-	c2 = c % 1000000000;
-
-	for (a = 92; ia< 99; ++a)
-	{
-		printf(", %lu", c1 + (c2 / 1000000000));
-		printf("%lu", c2 % 1000000000);
-		c1 = c1 + bj1;
-		b1 = c1 - b1;
-		c2 = c2 + b2;
-		b2 = c2 - b2;
-	}
-
-	printf("\n");
+	printf("%lu\n", sum);
 
 	return (0);
 }
