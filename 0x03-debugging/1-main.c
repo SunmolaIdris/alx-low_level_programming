@@ -13,10 +13,13 @@ int main(void)
 
         i = 0;
 
-        while (i < 10)
+       /* while (i < 10)
         {
                 putchar(i);
-        }
+        }*/
+
+	/*There is no increment operator which means
+	  0 will always be less than 10 forever*/
 
         printf("Infinite loop avoided! \\o/\n");
 
