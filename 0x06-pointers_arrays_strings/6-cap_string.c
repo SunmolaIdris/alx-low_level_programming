@@ -6,29 +6,31 @@
  *
  * Return: the modified string
  */
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
 	int i, j;
+	char sep[50] = {' ', '\n', '\t', ',', ';', '.', '!', '?', '"', '(', ')',
+			 '{', '}' };
 
-	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
-		'!', '?', '"', '(', ')', '{', '}'};
-
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (i == 0 || (s[i] >= 'a' && s[i] <= 'z'))
-			s[i] -= 32;
-
-		for (j = 0; j < 13; j++)
+		for (j = 0; sep[j] != '\0'; j++)
 		{
-			if (s[i] == spe[j])
+			if (i == 0)
 			{
-				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				if (str[i] >= 'a' && str[i] <= 'z')
 				{
-					s[i + 1] -= 32;
+					str[i] = str[i] - 32;
+				}
+			}
+			if (str[i] == sep[j])
+			{
+				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+				{
+					str[i + 1] = str[i + 1] - 32;
 				}
 			}
 		}
 	}
-
-	return (s);
+	return (str);
 }
